@@ -1,16 +1,22 @@
 <?php
 
-$loader = new \Twig\Loader\FilesystemLoader($templateDir);
-$twig = new \Twig\Environment($loader, ['debug' => true]);
+require './vendor/autoload.php';
 
-$news = array
-(
-    newsTitle = array("Title1", "Title2", "Title3")
-    newsDate = array("January", "February", "March")
-    newsDescription = array("Description1", "Description2", "Description3")
-)
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
 
+$loader = new Twig\Loader\FilesystemLoader('templates');
+$twig = new Twig\Environment($loader);
 
+// $news = array
+// (
+//     newsTitle = array("Title1", "Title2", "Title3")
+//     newsDate = array("January", "February", "March")
+//     newsDescription = array("Description1", "Description2", "Description3")
+// )
 
+$template = $twig->load('home.html.twig');
+
+echo $template->render();
 
 ?>

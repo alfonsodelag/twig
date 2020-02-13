@@ -1,0 +1,12 @@
+{
+    "name": "alfon/twig",
+    "authors": [
+        {
+            "name": "Alfonso De La Guardia",
+            "email": "alfonsodelag1@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "3.0"
+    }
+}
