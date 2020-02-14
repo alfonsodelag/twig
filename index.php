@@ -18,8 +18,6 @@ $date = new DateTime('2020-01-01');
 
 // $template = $twig->load('news.html.twig');
 
-
-
 // echo $template->render('news.html.twig', array(array(news1 => 'Sport', 'date' => $date->format('Y-m-d'), 'description' => 'Lorem Ipsum')
 // array(news2 => 'Business', 'date' => $date->format('Y-m-d'), 'description' => 'Lorem Ipsum')
 // array(news3 => 'Sport', 'Travels' => $date->format('Y-m-d'), 'description' => 'Lorem Ipsum')));
